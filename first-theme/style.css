@@ -1,0 +1,544 @@
+/* styles for my first WordPress website
+Name: FirstTheme
+Author: Karen Garcia
+Date: July 2022
+*/
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+body {
+    /* background: beige; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+}
+
+#hero {
+    background: #fff; 
+}
+
+.home #hero {
+    background-image:url(https://karenyoseff.com/wp-content/uploads/yellowstone-header-home.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position:0 110px;
+    min-height: 550px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+#hero img {
+    display: none;
+}
+
+.inner-page #hero {
+    background-image:url(https://karenyoseff.com/wp-content/uploads/yellowstone-inner.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position:0 110px;
+    min-height: 370px;
+    max-width: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 0 10px 0;
+    padding-bottom: 1px solid #888;
+}
+
+#top {
+    padding: 10px 30px 10px 10px;
+    /* background: orange; */
+    background: #A69851;
+    overflow: hidden;
+}
+
+#inner-header {
+    max-width: 1200px;
+    margin:0 auto; 
+    /* background: tan; */
+    padding: 10px 20px 10px 0;
+    clear: both;
+}
+
+.inner-footer {
+    max-width: 1200px;
+    margin:0 auto; 
+    /* background: tan; */
+    padding: 10px 0;
+}
+
+.inner-footer .third {
+    text-align: center;
+}
+
+.inner-footer ul {
+    height: 60px;
+    line-height: 60px;
+    font-size: .875em;
+    color: #999;
+    list-style-type: none;
+}
+.inner-footer a {
+    color: #999;
+}
+
+.inner-specials {
+    margin-top: 20px;
+    background: orange;
+    padding: 3%;
+
+}
+
+.inner-footer li {
+    float: left;
+    margin-right: 25px;
+}
+.row {
+    overflow: hidden;
+}
+
+.third {
+    width:31.91%;
+    float: left;
+    margin-right: 2.12%;
+    padding: 0 1%;
+}
+
+.third:last-of-type {
+    margin-right: 0;
+}
+/* background image */
+
+
+/* wrapper */
+
+#wrapper {
+    max-width: 1200px;
+    margin: 20px auto 40px auto;
+}
+.error404 #wrapper,
+.search #wrapper {
+    margin: 140px auto 0 auto ;
+} 
+
+main {
+    width: 62%;
+    float: left;
+}
+aside {
+    float: right;
+    width: 35%;
+}
+
+footer {
+    background: #eee;
+    padding-top: ;
+    clear: both;
+}
+
+
+.nav-button {
+    display: none;
+}
+
+#site-navigation {
+    float: right;
+
+}
+
+#site-navigation li {
+    float: left;
+    list-style-type: none;
+    margin-left: 15px;
+    position: relative;
+}
+
+#site-navigation  > li:last-of-type{
+    margin-right: 15px;
+}
+
+#site-navigation li a {
+    text-decoration: none;
+    padding-bottom: 5px;
+
+}
+
+.sub-menu {
+    display: none;
+}
+
+#site-navigation li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    /* background: white; */
+    background: #eee;
+    padding: 5px;
+    top: 24px;
+    width: 180px;
+}
+
+#site-navigation li:hover .sub-menu li{
+    margin-left: 0px;
+    float: none;
+    line-height: 1.4;
+}
+
+/* classes adn ids */
+.thumbnail {
+    margin-bottom: 15px;
+
+}
+
+.not-thumbnail img {
+    width: 500px;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+/* search */
+
+.screen-reader-text {
+    display: none;
+}
+
+
+#top #searchform {
+    float: right;
+}
+.post, .posts {
+    margin-bottom: 25px;
+}
+
+.meta {
+    margin-bottom: 10px;
+}
+/* typography */
+
+
+
+.block {
+    display: block;
+    font-style: italic;
+}
+.block a {
+    color: darkred;
+}
+.search .pagetitle {
+    margin-bottom: 10px;
+}
+.searching-box {
+    width: 62%;
+    float: left;
+}
+
+/* comment form css */
+#commentform {
+    border: 1px solid tan;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.comment-notes {
+    font-size: .9em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+
+label {
+    display: block;
+}
+
+.comment-form-cookies-consent label{
+    display: inline;
+}
+
+.comment-form p {
+    margin-bottom: 10px;
+} 
+
+.commentlist {
+    margin: 10px 0 15px 30px ;
+}
+
+img { 
+    max-width: 100%;
+}
+
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+
+.home h1 {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.third span a {
+    display: block;
+    color: brown;
+    font-style: italic;
+    margin-top: 5px;
+    font-size: 1.1em;
+}
+.row p {
+    font-size: .92em;
+}
+
+.third h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: #f28d35;
+}
+
+/* Aside */
+.inner-widget h3 {
+    background: #f28d35;
+    font-size: 1.4em;
+    padding: 3%;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.inner-tours h3{
+    font-size: 1.4em;
+    color: #f28d35;
+} 
+.inner-tours {
+    background: #eee;
+    padding: 3%;
+}
+
+
+aside ul {
+    margin-left: 5%;
+    margin-bottom: 12px;
+    list-style-type: none;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 2.4em;
+    margin-bottom: 11px;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p + .block {
+    margin: -10px 0 10px 0;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 6px;
+    color: darkred;
+}
+
+
+.meta span {
+    display: block;
+    font-style: italic;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: brown;
+}
+a {
+    color: brown;
+}
+
+/* -------the beginning of our media queries */
+
+@media screen and (max-width:1450px) {
+
+    #inner-header {
+
+        padding: 10px 25px 10px 25px;
+    }
+    
+    
+    #wrapper {
+        max-width: 1200px;
+        margin: 25px;
+    }
+
+    .home #hero {
+        background-image: none;
+        margin-top: 100px;
+        max-width: 100%;
+        min-height: auto;
+    }
+
+    .inner-page #hero {
+        background-image: none;
+        margin-top: 100px;
+        min-height: auto;
+    }
+    #hero img {
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+
+	/* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: absolute;
+		top: 7px;
+		left: 7px;
+		width: 50px;
+		height: 35px;
+		background: url('images/menu-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover {
+		background-color: rgba(0,0,0,.1);
+	}
+	.nav-button.open {
+		background: url('images/close-icon-large.png'), linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+
+    body {
+        padding-top: 50px 40px 0 40px;
+        
+     }
+
+	.primary-nav {
+		width: 100%;
+		float: none;
+		background-color:brown; /* change the menu color */
+		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
+		display: block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	.primary-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+    }
+    /* my navigation styles */
+    #site-navigation li {
+        float: none;
+        margin-left: 0px;
+    
+    }
+    #site-navigation li:hover .sub-menu {
+ 
+        position: static;
+        background: none;
+        padding: 0px;
+        width: auto;
+    }
+
+    /* end my nav styles */
+	.primary-nav li a {
+		display: block;
+		width: 100%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1);
+	}
+	.primary-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	.primary-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	.primary-nav.open {
+		height: auto;
+		padding-top: 50px;
+	}
+	.primary-nav.open li {
+		display: block;
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	.primary-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	.primary-nav li.parent > a:after {
+		content: "▼";
+		color: rgba(255,255,255,.5);
+		float: right;
+	}
+	.primary-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	.primary-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	.primary-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	.primary-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+
+} /* End Mobile Styles */
